@@ -6,7 +6,7 @@ import java.io.IOException;
 /**
  * Created by Yuriy on 04.12.2016.
  */
-public class TurnIntoPojo {
+public class FullDataBindingPOJOExample {
     public static void main(String[] args) {
         ObjectMapper mapper = new ObjectMapper(); // can reuse, share globally
         try {
