@@ -1,3 +1,5 @@
+package com.examples.jackson1x;
+
 public class User {
     public enum Gender { MALE, FEMALE };
 

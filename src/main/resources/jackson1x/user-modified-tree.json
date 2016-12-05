@@ -3,7 +3,7 @@
     "first": "Joe",
     "last": "Sixpack"
   },
+  "gender": "MALE",
   "verified": false,
-  "userImage": "Rm9vYmFyIQ==",
-  "gender": "MALE"
+  "userImage": "Rm9vYmFyIQ=="
 }
