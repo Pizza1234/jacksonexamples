@@ -1,0 +1,15 @@
+{
+  "Album-Title" : "Kind Of Blue",
+  "links" : [ "link1", "link2" ],
+  "songs" : [ "So What", "Flamenco Sketches", "Freddie Freeloader" ],
+  "artist" : {
+    "Artist-Name" : "Miles Davis",
+    "birthDate" : "26 трав. 1926",
+    "age" : 0
+  },
+  "musicians" : {
+    "Julian Adderley" : "Alto Saxophone",
+    "Miles Davis" : "Trumpet, Band leader",
+    "Paul Chambers" : "double bass"
+  }
+}

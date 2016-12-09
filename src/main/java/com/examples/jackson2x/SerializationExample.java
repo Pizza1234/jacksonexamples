@@ -69,9 +69,11 @@ public class SerializationExample {
 class Album {
   private String title;
   private String[] links;
-  private List<String> songs = new ArrayList<String>();
+  private List<String> songs
+      = new ArrayList<String>();
   private Artist artist;
-  private Map<String, String> musicians = new HashMap<String, String>();
+  private Map<String, String> musicians
+      = new HashMap<>();
 
   public Album(String title) {
     this.title = title;
