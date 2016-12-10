@@ -17,5 +17,4 @@ public abstract class Animal {
   String type;
   @JsonProperty("endangered")
   boolean endangered;
-
 }

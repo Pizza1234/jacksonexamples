@@ -9,9 +9,9 @@ import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-public class DeSerializeExample1 {
+public class DeSerializeExample {
 
-  public static void main(String[] args) throws JsonParseException, JsonMappingException, IOException {
+  public static void main(String[] args) throws IOException {
     ObjectMapper mapper = new ObjectMapper();
     Zoo zoo = mapper.readValue(FileUtils.readFileToByteArray(new File("zoo.json")), Zoo.class);
     System.out.println(zoo);

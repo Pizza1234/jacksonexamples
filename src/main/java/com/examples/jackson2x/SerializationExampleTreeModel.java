@@ -16,13 +16,6 @@ public class SerializationExampleTreeModel {
   public static void main(String[] args) throws IOException {
     // Create the node factory that gives us nodes.
     JsonNodeFactory factory = new JsonNodeFactory(false);
-
-    // create a json factory to write the treenode as json. for the example
-    // we just write to console
-    JsonFactory jsonFactory = new JsonFactory();
-    JsonGenerator generator = jsonFactory.createGenerator(System.out);
-    ObjectMapper mapper = new ObjectMapper();
-
     // the root node - album
     ObjectNode album = factory.objectNode();
     album.put("Album-Title", "Kind Of Blue");
@@ -37,6 +30,12 @@ public class SerializationExampleTreeModel {
     musicians.put("Julian Adderley", "Alto Saxophone");
     musicians.put("Miles Davis", "Trumpet, Band leader");
     album.put("musicians", musicians);
+
+    // create a json factory to write the treenode as json. for the example
+    // we just write to console
+    JsonFactory jsonFactory = new JsonFactory();
+    JsonGenerator generator = jsonFactory.createGenerator(System.out);
+    ObjectMapper mapper = new ObjectMapper();
     mapper.writeTree(generator, album);
   }
 }

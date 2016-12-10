@@ -4,10 +4,6 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Elephant extends Animal {
-
-  @JsonProperty
-  private String name;
-
   @JsonCreator
   public Elephant(@JsonProperty("name") String name) {
     this.name = name;
@@ -31,7 +27,9 @@ public class Elephant extends Animal {
 
   @Override
   public String toString() {
-    return "Elephant [name=" + name + ", getName()=" + getName() + ", getSound()=" + getSound() + ", getType()=" + getType()
+    return "Elephant [name=" + name + ", getName()="
+        + getName() + ", getSound()=" + getSound()
+        + ", getType()=" + getType()
         + ", isEndangered()=" + isEndangered() + "]";
   }
 

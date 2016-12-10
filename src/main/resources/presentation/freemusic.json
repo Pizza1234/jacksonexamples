@@ -1,0 +1,37 @@
+{
+  "title": "Free Music Archive - Albums",
+  "message": "",
+  "errors": [],
+  "total": "14972",
+  "total_pages": 2995,
+  "page": 1,
+  "limit": "5",
+  "dataset": [
+    {
+      "album_id": "7596",
+      "album_title": "!!! - Live @ KEXP 7\/24\/2010",
+      "album_handle": "_-_Live__KEXP_7242010",
+      "album_url": "http:\/\/freemusicarchive.org\/music\/___\/_-_Live__KEXP_7242010\/",
+      "album_type": "Live Performance",
+      "artist_name": "!!!",
+      "artist_url": "http:\/\/freemusicarchive.org\/music\/___\/",
+      "album_producer": null,
+      "album_engineer": null,
+      "album_information": "<p>Funk-punk party starters !!! performs live at KEXP\u2019s...<\/p>",
+      "album_date_released": null,
+      ...
+      "album_images": [
+        {
+          "image_id": "10574",
+          "user_id": null,
+          "artist_id": null,
+          "album_id": "7596",
+          "curator_id": null,
+          ...
+        }
+      ],
+      "tags": []
+    }
+  ]
+}
+

@@ -15,7 +15,7 @@ import com.fasterxml.jackson.core.JsonGenerator;
  * api_key=60BLHNQCAOUFPIBZ&limit=1, but use only a couple of fields
  *
  */
-public class StreamGenerator1 {
+public class StreamGenerator {
   public static void main(String[] args) throws IOException {
     JsonFactory factory = new JsonFactory();
     JsonGenerator generator = factory.createGenerator(new FileWriter(new File("albums.json")));

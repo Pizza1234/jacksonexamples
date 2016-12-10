@@ -7,13 +7,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.fasterxml.jackson.core.JsonGenerationException;
+import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.SerializationFeature;
 
-public class SerializeExample1 {
+public class SerializeExample {
   private static String outputFile = "zoo.json";
 
-  public static void main(String[] args) throws JsonGenerationException, JsonMappingException, IOException {
+  public static void main(String[] args) throws IOException {
     // let start creating the zoo
     Zoo zoo = new Zoo("Samba Wild Park", "Paz");
     Lion lion = new Lion("Simba");

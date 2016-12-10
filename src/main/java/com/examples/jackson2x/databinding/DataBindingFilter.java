@@ -1,16 +1,13 @@
 package com.examples.jackson2x.databinding;
 
 import java.io.IOException;
-import java.net.MalformedURLException;
 import java.net.URL;
 
-import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.DeserializationFeature;
-import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class DataBindingFilter {
-  public static void main(String[] args) throws JsonParseException, JsonMappingException, MalformedURLException, IOException {
+  public static void main(String[] args) throws IOException {
     String url = "http://freemusicarchive.org/api/get/albums.json?api_key=60BLHNQCAOUFPIBZ&limit=2";
     System.setProperty("http.agent", "Chrome");
     ObjectMapper mapper = new ObjectMapper();
@@ -26,5 +23,4 @@ public class DataBindingFilter {
       break;
     }
   }
-
 }

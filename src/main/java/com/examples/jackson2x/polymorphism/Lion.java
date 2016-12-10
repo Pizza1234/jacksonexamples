@@ -4,9 +4,6 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Lion extends Animal {
-
-  private String name;
-
   @JsonCreator
   public Lion(@JsonProperty("name") String name) {
     this.name = name;

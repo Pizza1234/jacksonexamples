@@ -12,9 +12,10 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class TreeModelParser2 {
-  public static void main(String[] args) throws MalformedURLException, IOException {
+  public static void main(String[] args) throws IOException {
     // Get a list of albums from free music archive. limit the results to 5
-    String url = "http://freemusicarchive.org/api/get/albums.json?api_key=60BLHNQCAOUFPIBZ&limit=10";
+    String url = "http://freemusicarchive.org/api/get/albums.json" +
+        "?api_key=60BLHNQCAOUFPIBZ&limit=10";
     System.setProperty("http.agent", "Chrome");
     // Get the contents of json as a string using commons IO IOUTils class.
     String genreJson = IOUtils.toString(new URL(url), Charset.defaultCharset());
@@ -30,6 +31,5 @@ public class TreeModelParser2 {
     while (albums.hasNext()) {
       System.out.println(albums.next().path("album_title"));
     }
-
   }
 }
