@@ -30,7 +30,7 @@ public class SerializationExample {
     mapper.configure(SerializationFeature.ORDER_MAP_ENTRIES_BY_KEYS, true);
     SimpleDateFormat outputFormat = new SimpleDateFormat("dd MMM yyyy");
     mapper.setDateFormat(outputFormat);
-    mapper.setPropertyNamingStrategy(new PropertyNamingStrategy() {
+    PropertyNamingStrategy propertyNamingStrategy = new PropertyNamingStrategy() {
       @Override
       public String nameForField(MapperConfig<?> config, AnnotatedField field, String defaultName) {
         if (field.getFullName().equals("com.examples.jackson2x.Artist#name"))
@@ -44,7 +44,8 @@ public class SerializationExample {
           return "Album-Title";
         return super.nameForGetterMethod(config, method, defaultName);
       }
-    });
+    };
+    mapper.setPropertyNamingStrategy(propertyNamingStrategy);
     mapper.setSerializationInclusion(Include.NON_EMPTY);
     mapper.writeValue(System.out, album);
   }
